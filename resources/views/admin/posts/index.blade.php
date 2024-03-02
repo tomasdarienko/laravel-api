@@ -29,11 +29,11 @@
                          @foreach($posts as $post)
                          <tr>
                               <td>
-                                   @if($post->cover_image == null)
+                                   @if($post->cover_image !== null)
                                    
-                                   <img src="{{asset('/img/cover.jpg')}}" alt="" width="300">
-                                   @else
                                    <img src="{{asset('/storage/' . $post->cover_image)}}" alt="" width="200px">
+                                   @else
+                                   <img src="{{asset('/img/cover.jpg')}}" alt="" width="300">
                                    @endif
                               </td>
                               <td>{{$post->id}}</td>
