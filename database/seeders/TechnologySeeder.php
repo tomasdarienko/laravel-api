@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Technology;
-use illuminate\supprt\Str;
+use illuminate\support\Str;
 class TechnologySeeder extends Seeder
 {
     /**

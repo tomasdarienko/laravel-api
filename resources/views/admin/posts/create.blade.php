@@ -44,6 +44,19 @@
                               @endforeach
                          </select>
                     </div>
+                    <div class="form-group my-3 d-flex flex-wrap">
+                              <div class="p-2 col-12">
+                                   <label class="control-label">Seleziona le tecnologie</label>
+                              </div>
+                              @foreach($technologies as $tech)
+                              <div class="p-3" >
+                                   <input type="checkbox" name="technologies[]" @checked($tech->id == old('technologies[]'))
+                                   id="{{$tech->id}}" class="form-check-input " value="{{$tech->id}}">
+
+                                   <label class="form-check-label">{{$tech->name}}</label>
+                              </div>
+                              @endforeach
+                    </div>
 
                     <div class="form-group my-3">
                          <input type="file" name="cover_image" id="cover_image" class="form-control" placeholder="immagine">

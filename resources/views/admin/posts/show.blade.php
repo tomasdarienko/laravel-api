@@ -12,7 +12,17 @@
 
                <h5 class="p-3">Owner: {{$post->owner}}</h5>
 
-               <h5>tipologia: <td>{{$post->type ? $post->type->name : 'non specificata'}}</td></h5>
+               <h5 class="p-3">tipologia: <td>{{$post->type ? $post->type->name : 'non specificata'}}</td></h5>
+
+               <div>
+                    <h5 class="p-3">Technologies:</h5>
+
+                    @forelse($post->technologies as $tech)
+                    #{{$tech->name}}
+                    @empty
+                         none ] :
+                    @endforelse
+               </div>
                <div class="p-5">
                     <h5>Description</h5>
                     <p>

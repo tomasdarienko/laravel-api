@@ -11,6 +11,12 @@ class Post extends Model
 
     protected $fillable = ['title','slug','description','cover_image','owner','type_id'];
 
+
+    public function technologies(){
+
+        return $this->belongsToMany(Technology::class);
+    }
+
     public function type(){
         return $this->belongsTo(Type::class);
     }
