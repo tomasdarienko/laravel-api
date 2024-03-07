@@ -8,8 +8,7 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function index() {
-        $posts = Post::paginate(6);
-
+        $posts = Post::with('type','technologies')->paginate(6);
 
         return response()->json([
 
