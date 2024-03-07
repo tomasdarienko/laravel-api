@@ -93,8 +93,8 @@
           </header>
           <main class="">
 
-               <div class="conteiner-fluid vh-100 d-flex">
-                    <nav class="sidebar col-2 vh-100 bg-secondary sticky">
+               <div class="asideMenu vh-100 d-flex">
+                    <nav class="sidebar col-2 vh-100 bg-secondary ">
                          <ul class="nav flex-column ">
                               <li class="nav-item">
                                    <a class="nav-link text-white" href="{{ route ('admin.dashboard') }}">
@@ -108,7 +108,7 @@
                               </li>
                          </ul>
                     </nav>
-                    <div class="col-10">
+                    <div class="col-10 content">
                          @yield('content')
                     </div>
                </div>

@@ -1,1 +1,10 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+.asideMenu{
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.237);
+}
+.content{
+     overflow-y: auto;
+}
