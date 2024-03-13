@@ -14,6 +14,7 @@ use App\http\Controllers\Api\PostController as PostController;
 |
 */
 Route::get('/posts',[PostController::class , 'index']);
+Route::get('/posts/{slug}',[PostController::class , 'show']);
 
 
 
